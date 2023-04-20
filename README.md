@@ -2,6 +2,26 @@
 
 
 Lab Exercises
+```
+public class Boa {
+	private String name;
+	private int length; // the length of the boa, in feet
+	private String favoriteFood;
+	public Boa (String name, int length, String favoriteFood){
+	this.name = name;
+	this.length = length;
+	this.favoriteFood = favoriteFood;
+}
+// returns true if this boa constrictor is healthy
+public boolean isHealthy(){
+	return this.favoriteFood.equals("granola bars");
+}
+// returns true if the length of this boa constrictor is
+// less than the given cage length
+public boolean fitsInCage(int cageLength){
+	return this.length < cageLength;
+}
+```
 
 ![img1](https://user-images.githubusercontent.com/77344495/233327696-e91e1ba3-1ea5-452e-a9df-dce1ed26a48f.png)
 
@@ -31,7 +51,6 @@ Lab Exercises
 ```
 
 In the first test case, I am testing the isHealthy method of the Boa class. I created two Boa objects with different favorite foods, and verify that isHealthy returns true for the first object and false for the second object.
-
 In the second test case, I am testing the fitsInCage method of the Boa class. I created two Boa objects with different lengths, and test whether they fit in cages of different lengths.
 
 Here, for ken ishealthy() will return true and for jen ishealthy() will return false so testcases are valid.
@@ -45,3 +64,39 @@ Here, for ken ishealthy() will return true and for jen ishealthy() will return f
 Here, for fitsInCage() will return true if cagelength > 2 for jen and fitsInCage() will return true if cagelength > 3 for ken. so our testcases are valid.
 Added assertions to the testFitsInCage method to check that the fitsInCage method returns the expected results for both jen and ken when the cage length is less than, equal to, and greater than the length of the boa.
 Note that the testFitsInCage method is now more robust, as it checks the behavior of the fitsInCage method for different input values.
+
+
+
+Code is updated with lengthInInches()
+```
+public class Boa {
+	private String name;
+	private int length; // the length of the boa, in feet
+	private String favoriteFood;
+	public Boa (String name, int length, String favoriteFood){
+	this.name = name;
+	this.length = length;
+	this.favoriteFood = favoriteFood;
+}
+// returns true if this boa constrictor is healthy
+public boolean isHealthy(){
+	return this.favoriteFood.equals("granola bars");
+}
+// returns true if the length of this boa constrictor is
+// less than the given cage length
+public boolean fitsInCage(int cageLength){
+	return this.length < cageLength;
+}
+
+//produces the length of the Boa in inches
+public int lengthInInches(){
+//you need to write the body of this method
+	return this.length * 12;
+}
+```
+
+![img4](https://user-images.githubusercontent.com/77344495/233332086-c5a92459-eb03-43ff-9e20-a1c5cea40a58.png)
+
+Here, lengthInInches() will return length of object in inches. so for jen it will return 24 and for ken it will return 36.
+
+
