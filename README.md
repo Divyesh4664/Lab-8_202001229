@@ -1,7 +1,19 @@
 # Lab-8_202001229
 
+# Name : Divyesh Baravaliya
+# Lab 8
 
-Lab Exercises
+Goal:
+The goal of this lab is to learn how to use JUnit to write unit tests for Java programs.
+
+Preliminary: Learn about JUnit in Eclipse:
+The primary goal of unit testing is to take the smallest piece of testable software in an
+application, isolate it from the remainder of the code, and determine whether or not it behaves
+the way you expect it to behave. Each unit is tested separately before integrating it into the
+rest of the program. In other words, classes should be tested in isolation from other classes
+(test the methods of a class before you use the class elsewhere). Unit testing has proven its
+value in that a large percentage of defects are identified during unit testing.
+
 ```
 public class Boa {
 	private String name;
@@ -67,7 +79,7 @@ Note that the testFitsInCage method is now more robust, as it checks the behavio
 
 
 
-Code is updated with lengthInInches()
+# Code is updated with lengthInInches()
 ```
 public class Boa {
 	private String name;
@@ -95,8 +107,6 @@ public int lengthInInches(){
 }
 ```
 
-![img4](https://user-images.githubusercontent.com/77344495/233332086-c5a92459-eb03-43ff-9e20-a1c5cea40a58.png)
+![img5](https://user-images.githubusercontent.com/77344495/233333382-d93dd5ad-0b43-4f89-9315-85b80155c1d4.png)
 
-Here, lengthInInches() will return length of object in inches. so for jen it will return 24 and for ken it will return 36.
-
-
+Here, lengthInInches() will return length of object in inches. so for jen it will return 24 and for ken it will return 36. so testcases are valid.
