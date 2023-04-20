@@ -39,3 +39,9 @@ Here, for ken ishealthy() will return true and for jen ishealthy() will return f
 ![img2](https://user-images.githubusercontent.com/77344495/233329464-9feeacb1-2bdf-404c-bb2e-b7ef11f8e506.png)
 
 Here, for ken ishealthy() will return true and for jen ishealthy() will return false so testcases are invalid.
+
+![img3](https://user-images.githubusercontent.com/77344495/233330349-d71c98fa-9f6d-426a-8c90-a4a9f6a92707.png)
+
+Here, for fitsInCage() will return true if cagelength > 2 for jen and fitsInCage() will return true if cagelength > 3 for ken. so our testcases are valid.
+Added assertions to the testFitsInCage method to check that the fitsInCage method returns the expected results for both jen and ken when the cage length is less than, equal to, and greater than the length of the boa.
+Note that the testFitsInCage method is now more robust, as it checks the behavior of the fitsInCage method for different input values.
