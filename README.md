@@ -36,4 +36,6 @@ In the second test case, I am testing the fitsInCage method of the Boa class. I 
 
 Here, for ken ishealthy() will return true and for jen ishealthy() will return false so testcases are valid.
 
+![img2](https://user-images.githubusercontent.com/77344495/233329464-9feeacb1-2bdf-404c-bb2e-b7ef11f8e506.png)
 
+Here, for ken ishealthy() will return true and for jen ishealthy() will return false so testcases are invalid.
